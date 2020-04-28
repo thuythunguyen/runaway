@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<style >
+	.click {
+		position: absolute;
+		top: :10px;
+		left: :10px;
+	}
+</style>
+<body>
+	<button class ="click" >Click me !!!!</button>
+	
+</body>
+</html>
+
+<script>	
+	$(document).ready(function(){
+		
+          $(".click").mouseover(function(){
+             	var x = Math.random()*200;
+				var y = Math.random()*200;
+             	$(".click").css
+             	(
+
+             	{
+             		
+             		top:x+"px",
+             		left:y+"px",
+             	}
+             		);
+           });
+	});
+	// function runaway(){
+	// 	var x = Math.random()*200;
+	// var y = Math.random()*200;
+	// document.getElementsByName("click").style.marginTop = x+"px";
+	// document.getElementsByName("click").style.marginLeft = y+"px";
+	// }
+</script> 
+
+ 
